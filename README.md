@@ -1,6 +1,6 @@
 # Avalanche Forecast: An Alexa Skill
 
-This repository contains code for the Alexa Avalanche Forecast skill. 
+This repository contains the source code for the Alexa Avalanche Forecast skill. 
 
 To learn more about what the skill does, please check out [Avalanche Forecast at Amazon](https://www.amazon.com/Birkan-Uzun-Avalanche-Forecast/dp/B08393LTZ8/ref=sr_1_1?keywords=Avalanche+Forecast&qid=1578097620&s=digital-skills&sr=1-1).
 
