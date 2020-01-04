@@ -1,0 +1,1058 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "avalanche forecast",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": [
+                      "cancel"
+                  ]
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": [
+                      "how can i use you",
+                      "what can you tell me",
+                      "what can i ask you",
+                      "what can i tell you",
+                      "help me",
+                      "how can I use this skill",
+                      "help"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "shut up",
+                      "quit",
+                      "exit",
+                      "stop"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "RegionAvalancheForecastIntent",
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "Region",
+                          "samples": [
+                              "{region}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "What is the avalanche forecast in {region} ",
+                      "for the avalanche forecast at {region}",
+                      "What is the avalanche danger for {region}",
+                      "for {region} travel advice",
+                      "for {region} conditions",
+                      "for {region} avalanche danger",
+                      "for {region} avalanche rating",
+                      "{region} avalanche rating",
+                      "{region} avalanche danger",
+                      "{region} conditions",
+                      "{region} travel advice",
+                      "avalanche rating in {region}",
+                      "travel advice for {region}",
+                      "avalanche danger in {region}",
+                      "conditions in {region}"
+                  ]
+              },
+              {
+                  "name": "StateAvalancheForecastIntent",
+                  "slots": [
+                      {
+                          "name": "state",
+                          "type": "AMAZON.US_STATE",
+                          "samples": [
+                              "{state}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "for {state} avalanche information",
+                      "tell me the avalanche information in {state}",
+                      "for {state} forecast",
+                      "for the {state} forecast",
+                      "{state} forecast",
+                      "what the best forecast is in {state}",
+                      "Where I can go in {state}",
+                      "what the latest forecast is in {state}",
+                      "avalanche information in {state}",
+                      "for the avalanche information in {state}",
+                      "Where I can snowboard in {state}",
+                      "Where I can ski in {state}",
+                      "for the Forecast summary in {state}",
+                      "{state} latest forecast",
+                      "{state} lowest avalanche danger",
+                      "Forecast Summary in {state}",
+                      "What is the latest forecast for {state}",
+                      "Where can I snowboard in {state}",
+                      "Where can I go in {state}",
+                      "What is the best forecast in {state}",
+                      "best forecast in {state}",
+                      "Where is the lowest avalanche danger in {state}",
+                      "Where can I ski in {state}"
+                  ]
+              },
+              {
+                  "name": "RegionBottomLineIntent",
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "Region",
+                          "samples": [
+                              "{region}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "for the bottom line in {region}",
+                      "get me the bottom line for {region}",
+                      "bottom line for {region}",
+                      "What the bottom line is for {region}",
+                      "for {region} bottom line",
+                      "tell me the bottom line at {region}",
+                      "bottom line at {region}",
+                      "{region} bottom line",
+                      "tell me the bottom line for {region}",
+                      "What is the bottom line for {region}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "Region",
+                  "values": [
+                      {
+                          "id": "ChugachStatePark",
+                          "name": {
+                              "value": "Chugach State Park"
+                          }
+                      },
+                      {
+                          "id": "ChilkatPass",
+                          "name": {
+                              "value": "Chilkat Pass"
+                          }
+                      },
+                      {
+                          "id": "HainesTransitional",
+                          "name": {
+                              "value": "Haines Transitional"
+                          }
+                      },
+                      {
+                          "id": "Lutak",
+                          "name": {
+                              "value": "Lutak"
+                          }
+                      },
+                      {
+                          "id": "ValdezContinental",
+                          "name": {
+                              "value": "Valdez Continental"
+                          }
+                      },
+                      {
+                          "id": "ValdezIntermountain",
+                          "name": {
+                              "value": "Valdez Intermountain"
+                          }
+                      },
+                      {
+                          "id": "ValdezMaritime",
+                          "name": {
+                              "value": "Valdez Maritime"
+                          }
+                      },
+                      {
+                          "id": "EasternAlaskaRange",
+                          "name": {
+                              "value": "Eastern Alaska Range"
+                          }
+                      },
+                      {
+                          "id": "SewardandLostLake",
+                          "name": {
+                              "value": "Seward and Lost Lake"
+                          }
+                      },
+                      {
+                          "id": "SummitLake",
+                          "name": {
+                              "value": "Summit Lake"
+                          }
+                      },
+                      {
+                          "id": "TurnagainPass",
+                          "name": {
+                              "value": "Turnagain Pass"
+                          }
+                      },
+                      {
+                          "id": "CordovaCity/Borough",
+                          "name": {
+                              "value": "Cordova City/Borough",
+                              "synonyms": [
+                                  "City of Cordova",
+                                  "Borough",
+                                  "Cordova City",
+                                  "Cordova City and Borough"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Juneau",
+                          "name": {
+                              "value": "Juneau",
+                              "synonyms": [
+                                  "City of Juneau"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "HatcherPass",
+                          "name": {
+                              "value": "Hatcher Pass"
+                          }
+                      },
+                      {
+                          "id": "BridgeportWinterRecreationArea",
+                          "name": {
+                              "value": "Bridgeport Winter Recreation Area",
+                              "synonyms": [
+                                  "Bridgeport"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "EastsideRegion",
+                          "name": {
+                              "value": "Eastside Region",
+                              "synonyms": [
+                                  "Eastern Sierra Region",
+                                  "Eastern Sierra"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "MountShasta",
+                          "name": {
+                              "value": "Mount Shasta"
+                          }
+                      },
+                      {
+                          "id": "CentralSierraNevada",
+                          "name": {
+                              "value": "Central Sierra Nevada",
+                              "synonyms": [
+                                  "Central Sierra Nevada Mountains"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "GreysRiver",
+                          "name": {
+                              "value": "Greys River",
+                              "synonyms": [
+                                  "southwest trails",
+                                  "greys river",
+                                  "greys river area",
+                                  "GREY'S RIVER",
+                                  "GREY'S RIVER AREA",
+                                  "SOUTHWEST TRAILS"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Teton",
+                          "name": {
+                              "value": "Teton",
+                              "synonyms": [
+                                  "TETON AREA"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "TogwoteePass",
+                          "name": {
+                              "value": "Togwotee Pass",
+                              "synonyms": [
+                                  "TOGWOTEE PASS AREA",
+                                  "CONTINENTAL DIVIDE TRAILS"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "CentralOregonMountains",
+                          "name": {
+                              "value": "Central Oregon Mountains",
+                              "synonyms": [
+                                  "Central Oregon"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Blues",
+                          "name": {
+                              "value": "Blues"
+                          }
+                      },
+                      {
+                          "id": "Elkhorns",
+                          "name": {
+                              "value": "Elkhorns"
+                          }
+                      },
+                      {
+                          "id": "NorthernWallowas",
+                          "name": {
+                              "value": "Northern Wallowas"
+                          }
+                      },
+                      {
+                          "id": "SouthernWallowas",
+                          "name": {
+                              "value": "Southern Wallowas"
+                          }
+                      },
+                      {
+                          "id": "AspenZone",
+                          "name": {
+                              "value": "Aspen Zone",
+                              "synonyms": [
+                                  "Aspen"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "FrontRangeZone",
+                          "name": {
+                              "value": "Front Range Zone",
+                              "synonyms": [
+                                  "Front Range"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "GrandMesaZone",
+                          "name": {
+                              "value": "Grand Mesa Zone",
+                              "synonyms": [
+                                  "Grand Mesa"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "GunnisonZone",
+                          "name": {
+                              "value": "Gunnison Zone",
+                              "synonyms": [
+                                  "Gunnison"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "NorthSanJuanMountains",
+                          "name": {
+                              "value": "North San Juan Mountains",
+                              "synonyms": [
+                                  "North San Juan"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SangredeCristoRange",
+                          "name": {
+                              "value": "Sangre de Cristo Range",
+                              "synonyms": [
+                                  "Sangre de Cristo"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SawatchZone",
+                          "name": {
+                              "value": "Sawatch Zone",
+                              "synonyms": [
+                                  "Sawatch"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SouthSanJuanMountains",
+                          "name": {
+                              "value": "South San Juan Mountains",
+                              "synonyms": [
+                                  "South San Juan"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SteamboatZone",
+                          "name": {
+                              "value": "Steamboat Zone",
+                              "synonyms": [
+                                  "Flat Tops",
+                                  "Steamboat",
+                                  "Steamboat and Flat Tops"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "VailSummitZone",
+                          "name": {
+                              "value": "Vail Summit Zone",
+                              "synonyms": [
+                                  "Vail Summit",
+                                  "Vail",
+                                  "Vail And Summit County"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "LionheadArea",
+                          "name": {
+                              "value": "Lionhead Area",
+                              "synonyms": [
+                                  "Lionhead Range",
+                                  "Lionhead"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "FlatheadandGlacier",
+                          "name": {
+                              "value": "Flathead and Glacier",
+                              "synonyms": [
+                                  "Glacier",
+                                  "Flathead"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Whitefish",
+                          "name": {
+                              "value": "Whitefish",
+                              "synonyms": [
+                                  "WHITEFISH RANGE"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "BridgerRange",
+                          "name": {
+                              "value": "Bridger Range",
+                              "synonyms": [
+                                  "Bridgers"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "CentennialRange",
+                          "name": {
+                              "value": "Centennial Range",
+                              "synonyms": [
+                                  "Centennials"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "CookeCity",
+                          "name": {
+                              "value": "Cooke City",
+                              "synonyms": [
+                                  "Cooke City Area"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Swan",
+                          "name": {
+                              "value": "Swan",
+                              "synonyms": [
+                                  "SWAN RANGE"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "NorthernGallatinRange",
+                          "name": {
+                              "value": "Northern Gallatin Range",
+                              "synonyms": [
+                                  "Northern Gallatin",
+                                  "Gallatin North"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "NorthernMadisonRange",
+                          "name": {
+                              "value": "Northern Madison Range",
+                              "synonyms": [
+                                  "Madison North",
+                                  "Northern Madison"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SouthernGallatinRange",
+                          "name": {
+                              "value": "Southern Gallatin Range",
+                              "synonyms": [
+                                  "Southern Gallatin",
+                                  "Gallatin South"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SouthernMadisonRange",
+                          "name": {
+                              "value": "Southern Madison Range",
+                              "synonyms": [
+                                  "Southern Madison",
+                                  "Madison South"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Kootenai",
+                          "name": {
+                              "value": "Kootenai"
+                          }
+                      },
+                      {
+                          "id": "WestCentralMontana",
+                          "name": {
+                              "value": "West Central Montana",
+                              "synonyms": [
+                                  "West Central"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Selkirks/Cabinets",
+                          "name": {
+                              "value": "Selkirks/Cabinets",
+                              "synonyms": [
+                                  "Cabinets",
+                                  "SELKIRKS"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "St.Regis/SilverValley",
+                          "name": {
+                              "value": "St. Regis/ Silver Valley",
+                              "synonyms": [
+                                  "Saint Regis",
+                                  "Silver Valley",
+                                  "Saint Regis Basin"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "PACAdvisoryArea",
+                          "name": {
+                              "value": "PAC Advisory Area",
+                              "synonyms": [
+                                  "Payette",
+                                  "Payette Avalanche Center"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "BannerSummit",
+                          "name": {
+                              "value": "Banner Summit",
+                              "synonyms": [
+                                  "Banner"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "GalenaSummit&EasternMtns",
+                          "name": {
+                              "value": "Galena Summit & Eastern Mtns",
+                              "synonyms": [
+                                  "Galena",
+                                  "Eastern Mountains",
+                                  "Galena Summit",
+                                  "Galena Summit and Eastern Mountains"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Sawtooth&WesternSmokyMtns",
+                          "name": {
+                              "value": "Sawtooth & Western Smoky Mtns",
+                              "synonyms": [
+                                  "Western Smoky",
+                                  "Sawtooth",
+                                  "Sawtooth and Western Smoky",
+                                  "Sawtooth and Western Smoky Mountains"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Soldier&WoodRiverValleyMtns",
+                          "name": {
+                              "value": "Soldier & Wood River Valley Mtns",
+                              "synonyms": [
+                                  "Soldier and Wood River ",
+                                  "Soldier and Wood River Valley",
+                                  "Soldier And Wood River Valley Mountains"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SanFranciscoPeaks",
+                          "name": {
+                              "value": "San Francisco Peaks",
+                              "synonyms": [
+                                  "Kachina Peaks",
+                                  "Kachina Peaks Avalanche Center"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "NorthernPresidentialRange",
+                          "name": {
+                              "value": "Northern Presidential Range",
+                              "synonyms": [
+                                  "Mount Washington",
+                                  "Mount Washington Avalanche Center"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "MtHood",
+                          "name": {
+                              "value": "Mt Hood",
+                              "synonyms": [
+                                  "Mount Hood"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "SnoqualmiePass",
+                          "name": {
+                              "value": "Snoqualmie Pass",
+                              "synonyms": [
+                                  "Snoqualmie"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "StevensPass",
+                          "name": {
+                              "value": "Stevens Pass"
+                          }
+                      },
+                      {
+                          "id": "WACascadesEast,Central",
+                          "name": {
+                              "value": "WA Cascades East, Central",
+                              "synonyms": [
+                                  "east slopes central lake chelan to south of i90",
+                                  "lake chelan to south of i90",
+                                  "LAKE CHELAN TO SOUTH OF I-90",
+                                  "EAST SLOPES CENTRAL",
+                                  "EAST SLOPES CENTRAL - LAKE CHELAN TO SOUTH OF I-90",
+                                  "Washington Cascades East, Central"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "Olympics",
+                          "name": {
+                              "value": "Olympics"
+                          }
+                      },
+                      {
+                          "id": "WACascadesEast,North",
+                          "name": {
+                              "value": "WA Cascades East, North",
+                              "synonyms": [
+                                  "washington cascades east north",
+                                  "east slopes north canadian border to lake chelan",
+                                  "CANADIAN BORDER TO LAKE CHELAN",
+                                  "EAST SLOPES NORTH",
+                                  "EAST SLOPES NORTH - CANADIAN BORDER TO LAKE CHELAN",
+                                  "Washington Cascades East, North"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "WACascadesEast,South",
+                          "name": {
+                              "value": "WA Cascades East, South",
+                              "synonyms": [
+                                  "washington cascades east south",
+                                  "south of i90 to columbia river",
+                                  "EAST SLOPES SOUTH - SOUTH OF I-90 TO COLUMBIA RIVER",
+                                  "SOUTH OF I-90 TO COLUMBIA RIVER",
+                                  "EAST SLOPES SOUTH",
+                                  "Washington Cascades East, South"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "WACascadesWest,Central",
+                          "name": {
+                              "value": "WA Cascades West, Central",
+                              "synonyms": [
+                                  "skagit river to south of i90",
+                                  "washington cascades west central",
+                                  "Washington Cascades West, Central",
+                                  "SKAGIT RIVER TO SOUTH OF I-90",
+                                  "WEST SLOPES CENTRAL",
+                                  "WEST SLOPES CENTRAL - SKAGIT RIVER TO SOUTH OF I-90"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "WACascadesWest,MtBaker",
+                          "name": {
+                              "value": "WA Cascades West, Mt Baker",
+                              "synonyms": [
+                                  "washington cascades west mount baker",
+                                  "Mount Baker",
+                                  "Washington Cascades West, Mount Baker",
+                                  "WEST SLOPES NORTH - CANADIAN BORDER TO SKAGIT RIVER",
+                                  "CANADIAN BORDER TO SKAGIT RIVER",
+                                  "WEST SLOPES NORTH"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "WACascadesWest,South",
+                          "name": {
+                              "value": "WA Cascades West, South",
+                              "synonyms": [
+                                  "South of I90 to columbia river",
+                                  "Washington Cascades West South",
+                                  "WEST SLOPES SOUTH - SOUTH OF I-90 TO COLUMBIA RIVER",
+                                  "SOUTH OF I-90 TO COLUMBIA RIVER",
+                                  "WEST SLOPES SOUTH"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "NorthernNewMexico",
+                          "name": {
+                              "value": "Northern New Mexico"
+                          }
+                      },
+                      {
+                          "id": "Abajos",
+                          "name": {
+                              "value": "Abajos"
+                          }
+                      },
+                      {
+                          "id": "Moab",
+                          "name": {
+                              "value": "Moab"
+                          }
+                      },
+                      {
+                          "id": "Ogden",
+                          "name": {
+                              "value": "Ogden"
+                          }
+                      },
+                      {
+                          "id": "Provo",
+                          "name": {
+                              "value": "Provo"
+                          }
+                      },
+                      {
+                          "id": "SaltLake",
+                          "name": {
+                              "value": "Salt Lake"
+                          }
+                      },
+                      {
+                          "id": "Skyline",
+                          "name": {
+                              "value": "Skyline"
+                          }
+                      },
+                      {
+                          "id": "Southwest",
+                          "name": {
+                              "value": "Southwest"
+                          }
+                      },
+                      {
+                          "id": "Uintas",
+                          "name": {
+                              "value": "Uintas"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "AMAZON.US_STATE",
+                  "values": [
+                      {
+                          "id": "UT",
+                          "name": {
+                              "value": "Utah"
+                          }
+                      },
+                      {
+                          "id": "NM",
+                          "name": {
+                              "value": "New Mexico"
+                          }
+                      },
+                      {
+                          "id": "WA",
+                          "name": {
+                              "value": "Washington"
+                          }
+                      },
+                      {
+                          "id": "NH",
+                          "name": {
+                              "value": "New Hampshire"
+                          }
+                      },
+                      {
+                          "id": "AZ",
+                          "name": {
+                              "value": "Arizona"
+                          }
+                      },
+                      {
+                          "id": "ID",
+                          "name": {
+                              "value": "Idaho"
+                          }
+                      },
+                      {
+                          "id": "MT",
+                          "name": {
+                              "value": "Montana"
+                          }
+                      },
+                      {
+                          "id": "CO",
+                          "name": {
+                              "value": "Colorado"
+                          }
+                      },
+                      {
+                          "id": "OR",
+                          "name": {
+                              "value": "Oregon"
+                          }
+                      },
+                      {
+                          "id": "WY",
+                          "name": {
+                              "value": "Wyoming"
+                          }
+                      },
+                      {
+                          "id": "CA",
+                          "name": {
+                              "value": "California"
+                          }
+                      },
+                      {
+                          "id": "AK",
+                          "name": {
+                              "value": "Alaska"
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "RegionAvalancheForecastIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "Region",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.299309887280.724948242945"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "Slot.Validation.165260370085.1048979775942.701194456243"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "StateAvalancheForecastIntent",
+                  "delegationStrategy": "SKILL_RESPONSE",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "state",
+                          "type": "AMAZON.US_STATE",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1359322009698.669111637189"
+                          },
+                          "validations": [
+                              {
+                                  "type": "isInSet",
+                                  "prompt": "Slot.Validation.1359322009698.669111637189.1341738702038",
+                                  "values": [
+                                      "Oregon",
+                                      "Montana",
+                                      "New Mexico",
+                                      "Wyoming",
+                                      "Colorado",
+                                      "New Hampshire",
+                                      "Alaska",
+                                      "California",
+                                      "Utah",
+                                      "Washington",
+                                      "Idaho",
+                                      "Arizona"
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "RegionBottomLineIntent",
+                  "delegationStrategy": "SKILL_RESPONSE",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "Region",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1325399969101.1322675911748"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "Slot.Validation.951735368714.17821275355.982101600280"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+      },
+      "prompts": [
+          {
+              "id": "Elicit.Slot.299309887280.724948242945",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "For which region?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "What region?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Where?"
+                  }
+              ]
+          },
+          {
+              "id": "Slot.Validation.165260370085.1048979775942.701194456243",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Please specify a valid avalanche region."
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Please provide a valid region name."
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.1325399969101.1322675911748",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "What region?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "For which region?"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.1359322009698.669111637189",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "What state?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "For what state?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Which state?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "For which state?"
+                  }
+              ]
+          },
+          {
+              "id": "Slot.Validation.951735368714.17821275355.982101600280",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Please provide a valid region name."
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Please specify a valid avalanche region."
+                  }
+              ]
+          },
+          {
+              "id": "Slot.Validation.1359322009698.669111637189.1341738702038",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Please provide a state that has avalanche regions."
+                  }
+              ]
+          }
+      ]
+  }
+}
